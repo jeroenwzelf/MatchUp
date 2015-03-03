@@ -1,12 +1,14 @@
 body {
     margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-image: url("../img/background.jpg");
 }
 
 .header-image {
     display: block;
     width: 100%;
     text-align: center;
-    background: url('http://placehold.it/1900x500') no-repeat center center scroll;
+    background: url("../img/headerbg_1900x500.png") no-repeat center center scroll;
+    box-shadow: 0 0 50px black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -14,22 +16,22 @@ body {
 }
 
 .headline {
-    padding: 20px 0;
+    padding: 42px 0;
 }
 
 .headline h1 {
-    font-size: 130px;
+		visibility: hidden;
+    font-size: 80px;
     background: #fff;
     background: rgba(255,255,255,0.9);
 }
 
 .headline h2 {
-    font-size: 77px;
-    background: #fff;
-    background: rgba(255,255,255,0.9);
+    font-size: 20px;
 }
 
 .featurette-divider {
+    border-color: #a5a5a5;
     margin: 80px 0;
 }
 
