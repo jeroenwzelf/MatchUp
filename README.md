@@ -8,4 +8,5 @@ Our Web 2.0 Mashup called MatchUp
 ##To upload your changed version:
 * Add everything you want to change		**(git add "filename")**
 * Comment on your changes							**(git commit -m "Your comment")**
+* Check for any updates from others   **(git pull origin master)**
 * Upload your changed files						**(git push origin master)**
