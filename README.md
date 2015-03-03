@@ -2,7 +2,7 @@
 Our Web 2.0 Mashup called MatchUp
 
 ##To download the newest version from github:
-* Go to directory on our computer			**(cd */MatchUp)**
+* Go to directory on your computer		**(cd */MatchUp)**
 * Pull the newest version							**(git pull origin master)**
 
 ##To upload your changed version:
