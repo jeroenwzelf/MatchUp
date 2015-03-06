@@ -41,7 +41,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar left">
-                    <li>
+                    <li class="active">
                         <a href="matching.html">Matching</a>
                     </li>
                     <li>
@@ -52,7 +52,7 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
+                    <li>
                         <a href="login.html">Sign In</a>
                     </li>
                 </ul>
@@ -61,18 +61,40 @@
     </nav>
     <!-- Page Content -->
     <div class="container">
-
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Sign in page</h1>
+				<div class="row">
+				<hr>
+				</div>
+				
+				<!-- If not signed in -->
+        <div class="row" id="notsigned">
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <img class="img-circle img-responsive" src="http://www.liquidpixels.com/images/icon-error.png"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3 class="text-center text-uppercase fullname">Not signed in</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        You have to sign in in order to match couples. Please sign in <a href="login.html"> here</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-        	<div class="panel panel-default">
-        	  <div class="panel-body">
-        	    You can't sign in yet
-            </div>
-          </div>
+        
+        <!-- If signed in -->
+        <div class="row" id="signed">
+        		<!-- Content for matchmaking here -->
         </div>
 
     </div>
