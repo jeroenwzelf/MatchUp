@@ -10,9 +10,12 @@
         <!-- Bootstrap Core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- Custom CSS -->
-        <link href="css/one-page-wonder.css" rel="stylesheet">
+        <link href="one-page-wonder.css" rel="stylesheet">
 
         <link href="css/profile.css" rel="stylesheet" />
+		
+        <link rel="stylesheet" type="text/css" href="Login.css">
+		<script src="Login.js"></script>
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -62,27 +65,40 @@
     <!-- Page Content -->
     <div class="container">
 
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Sign in page</h1>
-            </div>
-        </div>
-        <div class="row">
-        	<div class="panel panel-default">
-        	  <div class="panel-body">
-        	    You can't sign in yet
-            </div>
-          </div>
-        </div>
+	  <h1> Sign in to Match-Up! </h1>
+      <div id="Login">
+        <h2> Login </h2>
+        <form>
+          Enter your Email:
+	      <br><input type="text" name="Email"><br>
+	      Select the social medium you want to use to login to Match-Up.<br>
+	      <input type="radio" name="whichsmL" value="Facebook">Facebook<br>
+	      <input type="radio" name="whichsmL" value="Twitter">Twitter<br>
+	      <input type="submit" onclick="login();" value="Submit">
+        </form>
+      </div>
+  
+      <div id="Register">	
+        <h2> Register </h2>
+        <form>
+          Enter your Email:
+	      <br><input type="text" name="Email"><br>
+	      Select the social medium you want to use to Register to Match-Up.<br>
+	      <input type="radio" name="whichsmR" value="Facebook">Facebook<br>
+	      <input type="radio" name="whichsmR" value="Twitter">Twitter<br>
+	      <input type="submit" onclick="register();" value="Submit">
+        </form>
+      </div>
 
     </div>
     <!-- /.container -->
+
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
     </body>
 
 </html>
