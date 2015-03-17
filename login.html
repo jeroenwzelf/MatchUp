@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MatchUp: The Couple Matching Site</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="MatchUp: The Web Mashup 2.0">
+        <meta name="author" content="Jeroen enzo">
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="one-page-wonder.css" rel="stylesheet">
+
+        <link href="css/profile.css" rel="stylesheet" />
+		
+        <link rel="stylesheet" type="text/css" href="Login.css">
+		<script src="login.js"></script>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+    <!-- Top navigation bar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img alt="Home" src="img/LogoSmall.png" height="50px">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar left">
+                    <li>
+                        <a href="matching.html">Matching</a>
+                    </li>
+                    <li>
+                        <a href="profile.html">Profile</a>
+                    </li>
+                    <li>
+                        <a href="index.html#contact">Team</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="login.html">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Page Content -->
+    <div class="container">
+		
+		<hr class="featurette-divider">
+		
+		<div class="row">
+    	<div class="col-md-12">
+    		<h1>Sign in to Match-up!</h1>
+    	</div>
+    </div>
+
+      <div id="Login">
+        <h2> Login </h2>
+        <form>
+          Enter your Email:
+	      <br><input type="text" name="Email"><br>
+	      Select the social medium you want to use to login to Match-Up.<br>
+	      <input type="radio" name="whichsmL" value="Facebook">Facebook<br>
+	      <input type="radio" name="whichsmL" value="Twitter">Twitter<br>
+	      <input type="submit" onclick="login();" value="Submit">
+        </form>
+      </div>
+  
+      <div id="Register">	
+        <h2> Register </h2>
+        <form>
+          Enter your Email:
+	      <br><input type="text" name="Email"><br>
+	      Select the social medium you want to use to Register to Match-Up.<br>
+	      <input type="radio" name="whichsmR" value="Facebook">Facebook<br>
+	      <input type="radio" name="whichsmR" value="Twitter">Twitter<br>
+	      <input type="submit" onclick="register();" value="Submit">
+        </form>
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+
+</html>
