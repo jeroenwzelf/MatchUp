@@ -12,6 +12,19 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/one-page-wonder.css" rel="stylesheet">
+    
+    <script src="https://cdnjs.com/libraries/fullpage.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../jquery.fullPage.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		$('#fullpage').fullpage({ scrollingSpeed: 1000 });
+});
+</script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -100,13 +113,13 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container" id="fullpage">
     
   	<!-- Concept Section -->
         <hr class="featurette-divider" id="concept">
 
         <!-- First Featurette -->
-        <div class="featurette">
+        <div class="section featurette">
             <img class="featurette-image img-circle img-responsive pull-right" src="img/YesorNo_500x500.png">
             <h2 class="featurette-heading">Match two other individuals based on their appearances 
                 <span class="text-muted">or wait for the perfect match for yourself</span>
@@ -120,7 +133,7 @@
         <hr class="featurette-divider" id="signin">
 
         <!-- Second Featurette -->
-        <div class="featurette">
+        <div class="section featurette">
             <img class="featurette-image img-circle img-responsive pull-left" src="img/FB_500x500.png">
             <h2 class="featurette-heading">Sign in 
                 <a href="login.html"><span class="text-muted">Here</span></a>
@@ -136,7 +149,7 @@
         <hr class="featurette-divider" id="contact">
 
         <!-- Third Featurette -->
-        <div class="featurette">
+        <div class="section featurette">
             <h2 class="featurette-heading">Who are we? <br>
                 <span class="text-muted">Students from Leiden University, studying for a bachelor in Computer Science</span>
             </h2>
@@ -152,7 +165,7 @@
 					<div class="mark col-md-2 col-md-offset-1">
 		      	<img class="featurette-image img-circle img-responsive pull-center" src="img/heads/jimmy.jpg" width="150px">
 		      	<p class="text-center lead">Jimmy Drogtrop</p>
-		      	<p class="text-center text-muted lead small">Lover, Husband, Father, Son, Amazingly Hot Person And More</p>
+		      	<p class="text-center text-muted lead small">Web Developer, Project Manager, Computer Scientist</p>
 					</div>
 					<div class="mark col-md-2 col-md-offset-1">
 		      	<img class="featurette-image img-circle img-responsive pull-center" src="img/heads/patrick.jpg" width="150px">
