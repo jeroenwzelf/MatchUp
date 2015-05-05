@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="MatchUp: The Web Mashup 2.0">
-        <meta name="author" content="Jeroen enzo">
+        <meta name="author" content="Jeroen en Jimmy">
         <!-- Bootstrap Core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- Custom CSS -->
@@ -61,12 +61,12 @@
     </nav>
     <!-- Page Content -->
     <div class="container">
-				<div class="row">
-				<hr>
-				</div>
+	<div class="row">
+	    <hr>
+	</div> 
 				
-				<!-- If not signed in -->
-        <div class="row" id="notsigned">
+	<!-- If not signed in -->
+        <div class="row" id="not-signed">
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-body">
@@ -91,16 +91,118 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- If signed in -->
         <div class="row" id="signed">
-        		<!-- Content for matchmaking here -->
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2" id="picture-one">
+                                    <img class="featurette-image img-circle img-responsive pull-center" src="img/heads/jeroen.jpg">
+                                </div>
+                                <div class="col-md-8 col-md-offset-2" id="desc-one">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2" id="picture-two">
+                                    <img class="featurette-image img-circle img-responsive pull-center" src="img/heads/stef.jpg">
+                                </div>
+                                <div class="col-md-8 col-md-offset-2" id="desc-two">
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
 
-    </div>
-    <!-- /.container -->
 
+
+
+        <div class="row" id="judgement">
+                <div class="col-md-3 col-md-offset-3">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <img class="featurette-image img-circle img-responsive pull-center" id="judgement" onclick="judgement()" src="img/heads/stef.jpg">
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <img class="featurette-image img-circle img-responsive pull-center" id="judgement" onclick="judgement()" src="img/heads/jeroen.jpg">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+    <!-- /.container -->
     <!-- jQuery -->
+    <script>
+        var signed = 'yes';
+        if (signed == 'no') {
+            document.getElementById("signed").innerHTML = "";
+        } else {
+            document.getElementById("not-signed").innerHTML = "";
+            loadPerson();
+        }
+
+        function loadPerson() {
+            document.getElementById("desc-one").innerHTML = "</br> desc een";
+            document.getElementById("desc-two").innerHTML = "</br> desc twee";
+        }
+
+
+        function judgement() {
+            document.getElementById("signed").innerHTML = "hallo";
+        }
+<!--
+        function judgement() {
+            var judgement = document.getElementById('judgement');
+            if (image.src.match("stef")) {
+                document.getElementById("signed").innerHTML = "hallo";
+            } else {
+                document.getElementById("signed").innerHTML = "hallo";
+            }
+        }
+-->
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
