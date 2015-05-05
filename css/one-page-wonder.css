@@ -182,3 +182,4 @@ footer {
         margin-left: 0;
     }
 }
+#chatbox ul { list-style-type: none; }
