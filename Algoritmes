@@ -1,0 +1,12 @@
+Random mensen matchen houdt rekening met: 
+-Geslacht
+-Valt op
+-Leeftijd (zoals het nu staat, kunnen 2 personen maximaal 1 jaar verschillen)
+If (p1.geslacht==p2.valtop && p2.geslacht==p1.valtop && p1.leeftijd>p2.leeftijd-2 && p1.leeftijd<p2.leeftijd+2) {
+	Als dit allemaal geldt mag de match doorgaan!
+}
+
+Zijn 2 mensen een match? 
+Iedereen wordt 5 x gematcht.
+Als 2 personen 3 x approved zijn, kunenn ze chatten en worden ze niet verder vergeleken.
+Als bij 2 personen geldt: (approves + declines == 5) niet verder vergelijken en delete? alles over hun match. 
