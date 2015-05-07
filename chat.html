@@ -41,10 +41,10 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar left">
-                    <li class="active">
+                    <li>
                         <a href="matching.html">Matching</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="profile.html">Profile</a>
                     </li>
                     <li>
@@ -67,59 +67,205 @@
 				
 				<!-- If not signed in -->
         <div class="row">
-            <div class="container">
-    <div class="row">
-        <div class="col-md-5"></div>
-        <div class="col-md-7">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <span class="glyphicon glyphicon-comment"></span> Chat
-                </div>
-                <div class="panel-body" id="chatbox">
-                    <ul class="chat">
-                        <li class="left clearfix"><span class="chat-img pull-left">
-                            <img src="http://placehold.it/50/55C1E7/fff&amp;text=U" alt="User Avatar" class="img-circle">
-                        </span>
-                            <div class="chat-body clearfix">
-                                <div class="header">
-                                    <strong class="primary-font">TEST NAME</strong> <small class="pull-right text-muted">
-                                        <span class="glyphicon glyphicon-time"></span>TIME AGO</small>
-                                </div>
-                                <p>
-                                    MESSAGE HERE
-                                </p>
+                    <div class="col-md-3">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <span class="glyphicon glyphicon-user"></span> Available chats
                             </div>
-                        </li>
-                        <li class="right clearfix"><span class="chat-img pull-right">
-                            <img src="http://placehold.it/50/FA6F57/fff&amp;text=ME" alt="User Avatar" class="img-circle">
-                        </span>
-                            <div class="chat-body clearfix">
-                                <div class="header">
-                                    <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>TIME AGO</small>
-                                </div>
-                                <p>
-                                    MESSAGE HERE
-                                </p>
+                            <div class="panel-body" id="chatbox">
+                                <ul class="chat">
+                                    <li class="left clearfix">
+                                        <span class="chat-img pull-left">
+                                            <img src="img/heads/jeroen.jpg" alt="User Avatar" height=60px; class="img-circle">
+                                        </span>
+                                        <div class="chat-body clearfix">
+                                            <div class="header">
+                                                <strong class="primary-font">Jeroen Donkers</strong>
+                                                <small class=" text-muted">Last message at 14:02</small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="panel-footer">
-                    <div class="input-group">
-                        <input id="btn-input" class="form-control input-sm" placeholder="Type your message here..." type="text">
-                        <span class="input-group-btn">
-                            <button class="btn btn-warning btn-sm" id="btn-chat">
-                                Send</button>
-                        </span>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-7">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <span class="glyphicon glyphicon-comment"></span> Chat
+                            </div>
+                            <div class="panel-body" id="chatbox">
+                                <ul class="chat"  id="chatboxs">
+                                    <li class="left clearfix"><span class="chat-img pull-left">
+                                        <img src="img/heads/jeroen.jpg" height=60px; alt="User Avatar" class="img-circle">
+                                        </span>
+                                        <div class="chat-body clearfix">
+                                            <div class="header">
+                                                <strong class="primary-font">Jeroen Donkers</strong> <small class="text-muted">
+                                                <span class="glyphicon glyphicon-time"></span>10:58</small>
+                                            </div>
+                                            <p>
+                                                Hey.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="right clearfix"><span class="chat-img pull-right">
+                                        <img src="http://placehold.it/50/FA6F57/fff&amp;text=ME" alt="User Avatar" class="img-circle">
+                                        </span>
+                                        <div class="chat-body clearfix pull-right">
+                                            <div class="header">
+                                                <strong class="primary-font">Me</strong>
+                                                <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>11:49</small>
+                                            </div>
+                                            <p>
+                                                Hey, you ;)
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="left clearfix"><span class="chat-img pull-left">
+                                        <img src="img/heads/jeroen.jpg" height=60px; alt="User Avatar" class="img-circle">
+                                        </span>
+                                        <div class="chat-body clearfix">
+                                            <div class="header">
+                                                <strong class="primary-font">Jeroen Donkers</strong> <small class="text-muted">
+                                                <span class="glyphicon glyphicon-time"></span>12:01</small>
+                                            </div>
+                                            <p>
+                                                How are you?
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="right clearfix"><span class="chat-img pull-right">
+                                        <img src="http://placehold.it/50/FA6F57/fff&amp;text=ME" alt="User Avatar" class="img-circle">
+                                        </span>
+                                        <div class="chat-body clearfix pull-right">
+                                            <div class="header">
+                                                <strong class="primary-font">Me</strong>
+                                                <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>12:03</small>
+                                            </div>
+                                            <p>
+                                                Great, how are you?
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="left clearfix"><span class="chat-img pull-left">
+                                        <img src="img/heads/jeroen.jpg" height=60px; alt="User Avatar" class="img-circle">
+                                        </span>
+                                        <div class="chat-body clearfix">
+                                            <div class="header">
+                                                <strong class="primary-font">Jeroen Donkers</strong> <small class="text-muted">
+                                                <span class="glyphicon glyphicon-time"></span>12:08</small>
+                                            </div>
+                                            <p>
+                                                I'm fine! This chat function sure is great, huh?
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="right clearfix"><span class="chat-img pull-right">
+                                        <img src="http://placehold.it/50/FA6F57/fff&amp;text=ME" alt="User Avatar" class="img-circle">
+                                        </span>
+                                        <div class="chat-body clearfix pull-right">
+                                            <div class="header">
+                                                <strong class="primary-font">Me</strong>
+                                                <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>12:08</small>
+                                            </div>
+                                            <p>
+                                                Yes it definately is!
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="left clearfix"><span class="chat-img pull-left">
+                                        <img src="img/heads/jeroen.jpg" height=60px; alt="User Avatar" class="img-circle">
+                                        </span>
+                                        <div class="chat-body clearfix">
+                                            <div class="header">
+                                                <strong class="primary-font">Jeroen Donkers</strong> <small class="text-muted">
+                                                <span class="glyphicon glyphicon-time"></span>13:12</small>
+                                            </div>
+                                            <p>
+                                                It's so fast too.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="right clearfix"><span class="chat-img pull-right">
+                                        <img src="http://placehold.it/50/FA6F57/fff&amp;text=ME" alt="User Avatar" class="img-circle">
+                                        </span>
+                                        <div class="chat-body clearfix pull-right">
+                                            <div class="header">
+                                                <strong class="primary-font">Me</strong>
+                                                <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>13:15</small>
+                                            </div>
+                                            <p>
+                                                I know!
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="left clearfix"><span class="chat-img pull-left">
+                                        <img src="img/heads/jeroen.jpg" height=60px; alt="User Avatar" class="img-circle">
+                                        </span>
+                                        <div class="chat-body clearfix">
+                                            <div class="header">
+                                                <strong class="primary-font">Jeroen Donkers</strong> <small class="text-muted">
+                                                <span class="glyphicon glyphicon-time"></span>13:26</small>
+                                            </div>
+                                            <p>
+                                                Well, see you!
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="right clearfix"><span class="chat-img pull-right">
+                                        <img src="http://placehold.it/50/FA6F57/fff&amp;text=ME" alt="User Avatar" class="img-circle">
+                                        </span>
+                                        <div class="chat-body clearfix pull-right">
+                                            <div class="header">
+                                                <strong class="primary-font">Me</strong>
+                                                <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>13:31</small>
+                                            </div>
+                                            <p>
+                                                Okay, see you later!
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="left clearfix"><span class="chat-img pull-left">
+                                        <img src="img/heads/jeroen.jpg" height=60px; alt="User Avatar" class="img-circle">
+                                        </span>
+                                        <div class="chat-body clearfix">
+                                            <div class="header">
+                                                <strong class="primary-font">Jeroen Donkers</strong> <small class="text-muted">
+                                                <span class="glyphicon glyphicon-time"></span>14:02</small>
+                                            </div>
+                                            <p>
+                                                Byeeeeeee!!
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="right clearfix"><span class="chat-img pull-right">
+                                        <img src="http://placehold.it/50/FA6F57/fff&amp;text=ME" alt="User Avatar" class="img-circle">
+                                        </span>
+                                        <div class="chat-body clearfix pull-right">
+                                            <div class="header">
+                                                <strong class="primary-font">Me</strong>
+                                                <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>14:08</small>
+                                            </div>
+                                            <p>
+                                                Have a good day.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="input-group">
+                                    <input id="btn-input" class="form-control input-sm" placeholder="Type your message here..." type="text">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-warning btn-sm" id="btn-chat">Send</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-        </div>
-
     </div>
     <!-- /.container -->
 
